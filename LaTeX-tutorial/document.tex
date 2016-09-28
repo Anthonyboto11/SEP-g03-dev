@@ -1,0 +1,25 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+\usepackage{glossaries}
+\makeglossaries
+\newglossaryentry{myTerm}{name={ABC},description={my Term description}}
+
+\begin{document}
+
+
+\title {TEST}
+\author{Anthony Boto}
+\date {28/09/2016}
+\maketitle
+
+\section{Title}
+\subsection{Subtitle}
+Plain text.
+And here me make use of the term \gls{myTerm} that is defined in the
+glossary.
+\subsection{Another subtitle}
+More plain text.
+\glsaddall
+\printglossaries
+\end{document}
